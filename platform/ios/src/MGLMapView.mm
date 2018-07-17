@@ -4711,7 +4711,7 @@ public:
     {
         // If no custom location manager is provided will use the internal implementation.
         if (!self.locationManager) {
-            self.locationManager = [[CLLocationManager alloc] init];
+            self.locationManager = [[MGLCLLocationManager alloc] init];
         }
 
         if (self.locationManager.authorizationStatus == kCLAuthorizationStatusNotDetermined)
